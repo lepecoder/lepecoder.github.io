@@ -1,10 +1,9 @@
-.github/workflows/pages1.yml
 name: Pages1
 
 on:
   push:
     branches:
-      - ["main"] # default branch
+      - main # default branch
 
 jobs:
   build:
