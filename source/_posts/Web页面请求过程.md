@@ -1,7 +1,8 @@
 ---
 title: Web页面请求过程
 date: 2024-12-06 10:51:17
-tags:
+categories: 计算机网络
+tags: 计算机网络
 ---
 
 ## 准备DHCP、UDP、IP和以太网
@@ -22,7 +23,7 @@ tags:
 
 ## 准备DNS和ARP
 
-当我们向浏览器键入www.google.com时，浏览器会生成一个TCP套接字，由套接字发送HTTP请求，为了生成套接字我们需要知道www.google.com的IP地址，这就涉及DNS协议。
+当我们向浏览器键入 www.google.com 时，浏览器会生成一个TCP套接字，由套接字发送HTTP请求，为了生成套接字我们需要知道 www.google.com 的IP地址，这就涉及DNS协议。
 
 8. 主机生成DNS查询，将DNS报文放入UDP报文段中，目的地址在7中记录的DNS服务器地址。
 
@@ -40,17 +41,17 @@ tags:
 
 15. 路由器收到IP数据报后根据目的IP地址和转发表发送到DNS服务器。
 
-16. DNS服务器抽取到DNS查询报文，查找到www.google.com的记录，然后将DNS回答报文放入UDP报文段，经过路由器交换机达到主机。
+16. DNS服务器抽取到DNS查询报文，查找到 www.google.com 的记录，然后将DNS回答报文放入UDP报文段，经过路由器交换机达到主机。
 
 17. 主机终于获取到www.google.com的IP地址。
 
 ## TCP和HTTP
 
-18. 有了IP地址就可以生成TCP套接字，向www.google.com发送HTTP get报文，在生成TCP套接字时需要先和服务器三次握手连接，此时主机会发送目的端口80的TCP SYN报文，MAC地址为网关。
+18. 有了IP地址就可以生成TCP套接字，向 www.google.com 发送HTTP get报文，在生成TCP套接字时需要先和服务器三次握手连接，此时主机会发送目的端口80的TCP SYN报文，MAC地址为网关。
 
 19. 在网络中的路由器转发TCP SYN数据报
 
-20. 达到www.google.com的服务器，抽取出TCP SYN数据报发送到80端口的套接字上，回复TCP SYN ACK报文。
+20. 达到 www.google.com 的服务器，抽取出TCP SYN数据报发送到80端口的套接字上，回复TCP SYN ACK报文。
 
 *问题：客户端可以向服务器发送请求是因为服务器有公网IP，但是客户端没有，他是怎么接收服务器的回复的*
 
