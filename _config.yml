@@ -8,7 +8,7 @@ subtitle: ''
 description: '大学小生的个人博客'
 keywords: lepecoder
 author: Lepecoder
-language: zh
+language: zh-CN
 timezone: 'Asia/Shanghai'
 
 # URL
@@ -68,6 +68,35 @@ index_generator:
 default_category: uncategorized
 category_map:
 tag_map:
+
+
+##### hexo-neat
+neat_enable: true
+neat_html:
+  enable: true
+  exclude:  
+neat_css:
+  enable: true
+  exclude:
+    - '*.min.css'
+neat_js:
+  enable: true
+  mangle: true
+  output:
+  compress:
+  exclude:
+    - '*.min.js' 
+    
+    
+##### hexo-translate-title
+translate_title:
+  translate_way: baidu    #google | baidu | youdao
+  youdao_api_key: XXX
+  youdao_keyfrom: XXX
+  is_need_proxy: false     #true | false
+  proxy_url: http://localhost:8123
+  
+  
 
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
