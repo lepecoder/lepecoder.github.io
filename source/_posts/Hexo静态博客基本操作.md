@@ -2,6 +2,7 @@
 title: Hexo静态博客基本操作
 date: 2024-11-16 22:37:54
 tags:
+categories:
 ---
 
 ## 新建一篇文章
