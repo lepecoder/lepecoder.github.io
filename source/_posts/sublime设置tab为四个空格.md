@@ -5,12 +5,14 @@ tags:
 categories:
 ---
 
-在首选项->设置里:
-添加:
-
-```json
-"tab_size": 4,
-"translate_tabs_to_spaces": true,
-	    
+在首选项->设置里:
+
+添加:
+
+
+
+```json
+"tab_size": 4,
+"translate_tabs_to_spaces": true,
 ```
     

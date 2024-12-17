@@ -1,7 +1,7 @@
 ---
 title: Python添加自定义目录到sys.path
 date: 2020-03-28T21:13:00
-tags:
+tags: ['Python']
 categories:
 ---
 
